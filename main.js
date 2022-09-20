@@ -22,8 +22,11 @@ function sum(){
     let qte = document.querySelectorAll(".qte")
     let price = document.querySelectorAll(".price")
     let sum = 0;
-    for(let i = 0 ; i <qte.length ; i++)
+    for(let i = 0 ; i <qte.length ; i++){
     sum +=qte[i].innerHTML * price[i].innerHTML
+}
+document.getElementById('totalPrice').innerHTML ="Shopping Bag Total : $" +sum
+
 }
 // document.getElementById('total').innerHTML ="Shopping Bag Total : $" +sum
 
